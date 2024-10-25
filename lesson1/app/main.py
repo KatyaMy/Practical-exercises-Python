@@ -4,7 +4,6 @@ from enum import Enum
 import uvicorn
 from fastapi.middleware.cors import CORSMiddleware
 
-
 origins = [
     "http://localhost:5173",
 ]
@@ -39,12 +38,13 @@ class Case(BaseModel):
     priority: Priority = Field(max_length=10)
 
 
+# Создайте список, чтобы хранить тестовые случаи:
 cases = []
 
 
 @app.get("/")
 def read_root():
-    return {"Hello": "World"}
+    return {"Hi": "World"}
 
 
 @app.post("/testcases/", response_model=Case)
