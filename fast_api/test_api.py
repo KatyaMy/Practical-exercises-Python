@@ -12,7 +12,7 @@ app = FastAPI()
 
 
 def create_new_tc():
-    response = requests.post(url, json=create_case)
+    response = requests.post(url, json=create_case_dict)
     return response.json().get('id')
 
 
@@ -26,7 +26,7 @@ def test_get_data():
 
 @pytest.mark.post
 def test_post_t_case():
-    response = requests.post(url, json=create_case)
+    response = requests.post(url, json=create_case_dict)
     print(response.text)
     assert response.status_code == HTTPStatus.OK, (f"===Неправильный код состояния====\nОжидалось: {HTTPStatus.OK},"
                                                    f"Получено: {response.status_code}\nОтвет: {response.text}")
@@ -44,7 +44,7 @@ def test_get_case_id():
         f"URL: {url}\n"
         f"Метод: POST\n"
         f"Заголовки: {response.request.headers}\n"
-        f"Тело запроса: {create_case}\n"
+        f"Тело запроса: {create_case_dict}\n"
     )
 
     response_info = (

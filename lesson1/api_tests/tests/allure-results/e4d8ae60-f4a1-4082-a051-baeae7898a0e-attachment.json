@@ -1,12 +1,12 @@
 {
-    "id": 2,
-    "name": "Имя",
-    "description": "Описание",
+    "id": 76,
+    "name": "Strong.",
+    "description": "Region long couple citizen space success but.",
     "steps": [
         "Шаг 1",
         "Шаг 2",
         "Шаг 3"
     ],
     "expected_result": "Ожидаемый результат",
-    "priority": "низкий"
+    "priority": "средний"
 }

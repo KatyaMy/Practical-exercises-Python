@@ -1,7 +1,7 @@
 from faker import Faker
 
 faker = Faker()
-create_case = {
+create_case_dict = {
     "id": faker.random_number(2),
     "name": faker.text(8),
     "description": faker.sentence(6),

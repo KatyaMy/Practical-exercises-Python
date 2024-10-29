@@ -13,3 +13,6 @@ __pycache__/
 
 #Резервные файлы с символом
 *~
+# Ignore Allure results and reports
+allure-results/
+allure-report/
