@@ -30,6 +30,14 @@ class Browser:
         except NoSuchElementException:
             raise AssertionError(f"Элемент с XPATH '{xpath}' не найден")
 
+    def element_with_css(self, css):
+        """Находит элемент по CSS и возвращает завернутый элемент."""
+        try:
+            element = self.browser.find_element(By.XPATH, css)
+            return WebElementWrapper(element)
+        except NoSuchElementException:
+            raise AssertionError(f"Элемент с XPATH '{css}' не найден")
+
 
 browser = Browser(driver)
 

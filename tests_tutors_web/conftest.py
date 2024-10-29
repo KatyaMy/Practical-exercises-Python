@@ -29,27 +29,27 @@ def login():
 
 
 @pytest.fixture(scope="function")
-def driver(login):
+def driver():
     driver = webdriver.Chrome()
-    driver.get("http://195.133.27.184/")
+    # driver.get("http://195.133.27.184/")
 
     # Используем CSRF-токен и sessionid, полученные из фикстуры login
-    driver.add_cookie(
-        {
-            "name": "csrftoken",
-            "value": login["csrftoken"],
-            "path": "/",
-            "domain": "195.133.27.184",
-        }
-    )
-    driver.add_cookie(
-        {
-            "name": "sessionid",
-            "value": login["sessionid"],
-            "path": "/",
-            "domain": "195.133.27.184",
-        }
-    )
+    # driver.add_cookie(
+    #     {
+    #         "name": "csrftoken",
+    #         "value": login["csrftoken"],
+    #         "path": "/",
+    #         "domain": "195.133.27.184",
+    #     }
+    # )
+    # driver.add_cookie(
+    #     {
+    #         "name": "sessionid",
+    #         "value": login["sessionid"],
+    #         "path": "/",
+    #         "domain": "195.133.27.184",
+    #     }
+    # )
 
     driver.refresh()
 
