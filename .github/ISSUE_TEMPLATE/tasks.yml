@@ -48,14 +48,12 @@ body:
       label: "Status"
       description: "Current status of the task"
       options:
-        - label: "To Do"
-          value: "to_do"
-        - label: "In Progress"
-          value: "in_progress"
-        - label: "Done"
-          value: "done"
+        - To Do
+        - In Progress
+        - Done         
     validations:
       required: true
+      
   - type: textarea
     id: task_additional_notes
     attributes:
