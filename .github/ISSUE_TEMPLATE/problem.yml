@@ -3,7 +3,7 @@ description: Template for creating a new task
 title: "[TASK] "
 labels: 
   - task
-assignees: []  # Use an array here if you want to pre-assign, or leave it blank to allow assignment later
+assignees: []  # Leave blank to allow assignment later
 
 body:
   - type: markdown
@@ -12,7 +12,7 @@ body:
         **Please fill out the following information for the new task:**
 
   - type: input
-    id: summary
+    id: task_summary
     attributes:
       label: "Task Summary"
       description: "Provide a brief summary or goal for the task"
@@ -21,7 +21,7 @@ body:
       required: true
 
   - type: textarea
-    id: description
+    id: task_description
     attributes:
       label: "Detailed Task Description"
       description: "Describe what needs to be done in detail, steps for completion, and expected outcomes"
@@ -30,7 +30,7 @@ body:
       required: true
 
   - type: input
-    id: due_date
+    id: task_due_date
     attributes:
       label: "Due Date"
       description: "Specify the deadline for this task (e.g., 2024-12-31)"
@@ -39,7 +39,7 @@ body:
       required: false
 
   - type: checkboxes
-    id: priority
+    id: task_priority
     attributes:
       label: "Priority"
       description: "Select the priority level for the task"
@@ -51,7 +51,7 @@ body:
       required: true
 
   - type: dropdown
-    id: status
+    id: task_status
     attributes:
       label: "Task Status"
       description: "Specify the current status of the task"
@@ -63,7 +63,7 @@ body:
       required: true
 
   - type: textarea
-    id: additional_notes
+    id: task_additional_notes
     attributes:
       label: "Additional Notes"
       description: "Any additional information or links that might be useful"
