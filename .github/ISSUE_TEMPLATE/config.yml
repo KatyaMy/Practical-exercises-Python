@@ -1,8 +1,8 @@
-blank_issues_enabled: false
-contact_links:
-  - name: Task
-    url: https://github.com/ВАШ_РЕПОЗИТОРИЙ/issues/new?template=task-template.md
-    about: "Шаблон для создания новой задачи"
-  - name: Bug Report
-    url: https://github.com/ВАШ_РЕПОЗИТОРИЙ/issues/new?template=bug-report-template.md
-    about: "Сообщите о баге"
+# blank_issues_enabled: false
+# contact_links:
+#   - name: Task
+#     url: 
+#     about: "Шаблон для создания новой задачи"
+#   - name: Bug Report
+#     url: 
+#     about: "Сообщите о баге"
