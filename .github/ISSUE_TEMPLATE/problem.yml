@@ -31,4 +31,47 @@ body:
   - type: input
     id: due_date
     attributes:
-      label: "Срок выполнения
+      label: "Срок выполнения"
+      description: "Укажите крайний срок выполнения задачи (например, 2024-12-31)"
+      placeholder: "YYYY-MM-DD"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: priority
+    attributes:
+      label: "Приоритет"
+      description: "Выберите приоритет задачи"
+      options:
+        - label: High
+          value: high
+        - label: Medium
+          value: medium
+        - label: Low
+          value: low
+    validations:
+      required: true
+
+  - type: dropdown
+    id: status
+    attributes:
+      label: "Статус задачи"
+      description: "Укажите текущий статус задачи"
+      options:
+        - label: To Do
+          value: to_do
+        - label: In Progress
+          value: in_progress
+        - label: Done
+          value: done
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional_notes
+    attributes:
+      label: "Дополнительные заметки"
+      description: "Любая дополнительная информация или ссылки, которые могут быть полезны"
+      placeholder: "Введите любые дополнительные комментарии"
+    validations:
+      required: false
