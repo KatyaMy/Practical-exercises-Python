@@ -1,38 +1,39 @@
 name: Task
 description: Template for creating a new task
 title: "[TASK] "
-labels: task
-assignees: ''
+labels: 
+  - task
+assignees: []  # Use an array here if you want to pre-assign, or leave it blank to allow assignment later
 
 body:
   - type: markdown
     attributes:
       value: |
-        **Пожалуйста, заполните следующую информацию для новой задачи:**
+        **Please fill out the following information for the new task:**
 
   - type: input
     id: summary
     attributes:
-      label: "Краткое описание задачи"
-      description: "Введите краткое описание или цель задачи"
-      placeholder: "Например, Обновить страницу профиля пользователя"
+      label: "Task Summary"
+      description: "Provide a brief summary or goal for the task"
+      placeholder: "e.g., Update user profile page"
     validations:
       required: true
 
   - type: textarea
     id: description
     attributes:
-      label: "Подробное описание задачи"
-      description: "Опишите, что нужно сделать в рамках задачи"
-      placeholder: "Введите детали задачи, шаги для выполнения и ожидаемые результаты"
+      label: "Detailed Task Description"
+      description: "Describe what needs to be done in detail, steps for completion, and expected outcomes"
+      placeholder: "Enter task details, steps, and expected outcomes"
     validations:
       required: true
 
   - type: input
     id: due_date
     attributes:
-      label: "Срок выполнения"
-      description: "Укажите крайний срок выполнения задачи (например, 2024-12-31)"
+      label: "Due Date"
+      description: "Specify the deadline for this task (e.g., 2024-12-31)"
       placeholder: "YYYY-MM-DD"
     validations:
       required: false
@@ -40,38 +41,32 @@ body:
   - type: checkboxes
     id: priority
     attributes:
-      label: "Приоритет"
-      description: "Выберите приоритет задачи"
+      label: "Priority"
+      description: "Select the priority level for the task"
       options:
         - label: High
-          value: high
         - label: Medium
-          value: medium
         - label: Low
-          value: low
     validations:
       required: true
 
   - type: dropdown
     id: status
     attributes:
-      label: "Статус задачи"
-      description: "Укажите текущий статус задачи"
+      label: "Task Status"
+      description: "Specify the current status of the task"
       options:
         - label: To Do
-          value: to_do
         - label: In Progress
-          value: in_progress
         - label: Done
-          value: done
     validations:
       required: true
 
   - type: textarea
     id: additional_notes
     attributes:
-      label: "Дополнительные заметки"
-      description: "Любая дополнительная информация или ссылки, которые могут быть полезны"
-      placeholder: "Введите любые дополнительные комментарии"
+      label: "Additional Notes"
+      description: "Any additional information or links that might be useful"
+      placeholder: "Enter any additional comments or notes"
     validations:
       required: false
