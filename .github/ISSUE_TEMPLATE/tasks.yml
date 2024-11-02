@@ -11,14 +11,6 @@ body:
       value: |
         **Fill in the details for the new task:**
 
-  - type: input
-    id: task_summary
-    attributes:
-      label: "Task Summary"
-      description: "Brief summary of the task"
-      placeholder: "e.g., Update profile page"
-    validations:
-      required: true
 
   - type: textarea
     id: task_description
