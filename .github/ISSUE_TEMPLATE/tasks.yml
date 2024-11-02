@@ -51,16 +51,16 @@ body:
       required: true
 
   - type: dropdown
-    id: task_status
-    attributes:
-      label: "Task Status"
-      description: "Specify the current status of the task"
-      options:
-        - label: To Do
-        - label: In Progress
-        - label: Done
-    validations:
-      required: true
+  id: task_status
+  attributes:
+    label: "Task Status"
+    description: "Specify the current status of the task"
+    options:
+      - label: "To Do"
+      - label: "In Progress"
+      - label: "Done"
+  validations:
+    required: true
 
   - type: textarea
     id: task_additional_notes
