@@ -1,35 +1,23 @@
 ---
-name: User story
-about: Describe story shoppingListItem
-title: ''
-labels: User story
+name: Task
+about: Template for a general task
+title: "[TASK] "
+labels: task
 assignees: ''
-
 ---
 
-**As a** <role> **I want to** <goal> **so that** <benefit>
+## Задача
 
-**Assumptions & Constraints**
-1. Listed assumptions, constraints, and dependencies relevant to this specific story.
-Assumptions are factors that are believed to be true, but have not been confirmed; Constraints are defined as restrictions or limitations on possible solutions
+**Описание задачи**
+Краткое описание цели задачи и что нужно достичь.
 
-**Preconditions**
-1. Listed preconditions relevant to this specific story.
+**Шаги для выполнения**
+1. [ ] Шаг 1: Опишите, что нужно сделать в первом шаге
+2. [ ] Шаг 2: Опишите, что нужно сделать во втором шаге
+3. [ ] Шаг 3: Добавьте дополнительные шаги, если необходимо
 
-**Business rules**
-1. Listed Business Rules (include corporate policies, government regulations, industry standards, and computational algorithms)
+**Ожидаемый результат**
+Укажите, каким должен быть итог выполнения задачи.
 
-### Acceptance Criteria
-A clear and concise description of what you want to happen.  Testable criteria
-
-**Out of scope**
-
-**Epic link**
-E.g.: Epic #100 [Epic]()
-
-**Labels to be added**
-"User story", Corresponding Functionality (e.g. User), Priority ("pri: "), "Corresponding Epic"
-
-### Tasks 
-1. - [ ] sample task.
-
+**Дополнительная информация**
+Добавьте ссылки, файлы, или другую информацию, которая может помочь в выполнении задачи.
