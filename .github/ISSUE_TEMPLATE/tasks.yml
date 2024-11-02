@@ -19,7 +19,7 @@ body:
       description: "Details of the task"
       placeholder: "Enter task details"
     validations:
-      required: true
+      required: false
 
   - type: input
     id: task_due_date
