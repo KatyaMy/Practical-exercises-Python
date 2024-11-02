@@ -1,4 +1,4 @@
-name: Task_n
+name: Task
 description: Template for creating a new task
 title: "[TASK] "
 labels: 
@@ -44,23 +44,23 @@ body:
       label: "Priority"
       description: "Select the priority level for the task"
       options:
-        - label: High
-        - label: Medium
-        - label: Low
+        - label: "High"
+        - label: "Medium"
+        - label: "Low"
     validations:
       required: true
 
   - type: dropdown
-  id: task_status
-  attributes:
-    label: "Task Status"
-    description: "Specify the current status of the task"
-    options:
-      - label: "To Do"
-      - label: "In Progress"
-      - label: "Done"
-  validations:
-    required: true
+    id: task_status
+    attributes:
+      label: "Task Status"
+      description: "Specify the current status of the task"
+      options:
+        - label: "To Do"
+        - label: "In Progress"
+        - label: "Done"
+    validations:
+      required: true
 
   - type: textarea
     id: task_additional_notes
