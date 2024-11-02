@@ -9,23 +9,23 @@ body:
   - type: markdown
     attributes:
       value: |
-        **Please fill out the following information for the new task:**
+        **Fill in the details for the new task:**
 
   - type: input
     id: task_summary
     attributes:
       label: "Task Summary"
-      description: "Provide a brief summary or goal for the task"
-      placeholder: "e.g., Update user profile page"
+      description: "Brief summary of the task"
+      placeholder: "e.g., Update profile page"
     validations:
       required: true
 
   - type: textarea
     id: task_description
     attributes:
-      label: "Detailed Task Description"
-      description: "Describe what needs to be done in detail, steps for completion, and expected outcomes"
-      placeholder: "Enter task details, steps, and expected outcomes"
+      label: "Description"
+      description: "Details of the task"
+      placeholder: "Enter task details"
     validations:
       required: true
 
@@ -33,7 +33,7 @@ body:
     id: task_due_date
     attributes:
       label: "Due Date"
-      description: "Specify the deadline for this task (e.g., 2024-12-31)"
+      description: "Deadline for the task"
       placeholder: "YYYY-MM-DD"
     validations:
       required: false
@@ -42,7 +42,7 @@ body:
     id: task_priority
     attributes:
       label: "Priority"
-      description: "Select the priority level for the task"
+      description: "Select task priority"
       options:
         - label: "High"
         - label: "Medium"
@@ -53,8 +53,8 @@ body:
   - type: dropdown
     id: task_status
     attributes:
-      label: "Task Status"
-      description: "Specify the current status of the task"
+      label: "Status"
+      description: "Current status of the task"
       options:
         - label: "To Do"
         - label: "In Progress"
@@ -65,8 +65,8 @@ body:
   - type: textarea
     id: task_additional_notes
     attributes:
-      label: "Additional Notes"
-      description: "Any additional information or links that might be useful"
-      placeholder: "Enter any additional comments or notes"
+      label: "Notes"
+      description: "Any additional comments"
+      placeholder: "Enter notes"
     validations:
       required: false
