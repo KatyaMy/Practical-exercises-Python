@@ -16,3 +16,5 @@ class Login:
     submit_button = By.CSS_SELECTOR, '[type="submit"]'
     title = By.XPATH, '//*[@class="welcome-section text-center bg-dark text-white py-5"]'
     alert_mms = By.XPATH, '//ul[@class="errorlist nonfield"]/li'
+    alert_required_field_login = By.XPATH, "//div[@class='form-group']//li"
+    alert_required_filed_password = By.XPATH, "//div[@class='form-group mt-3']//li"
