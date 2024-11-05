@@ -53,3 +53,7 @@ def test_empty_filed_validation(driver, wait):
     alert_mms_password = driver.find_element(*Login.alert_required_filed_password).text
     assert alert_mms_login == mms_empty_login
     assert alert_mms_password == mms_empty_password
+
+
+def test_test(driver):
+    pass
