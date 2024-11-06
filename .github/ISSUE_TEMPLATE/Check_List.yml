@@ -121,4 +121,24 @@ body:
 
   - type: input
     key: "remember_me_check"
-    labe
+    label: "Check if 'Remember me' functionality works correctly (if available)."
+    required: true
+    options:
+      - true
+      - false
+
+  - type: input
+    key: "password_visibility_toggle"
+    label: "Ensure the 'Password' field does not show input when 'eye' icon is clicked (if available)."
+    required: true
+    options:
+      - true
+      - false
+
+  - type: input
+    key: "brute_force_protection"
+    label: "Ensure login page is protected from brute-force attacks (rate-limiting attempts)."
+    required: true
+    options:
+      - true
+      - false
