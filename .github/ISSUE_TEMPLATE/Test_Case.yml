@@ -1,4 +1,4 @@
-name: Test Case
+name: TC
 description: Template for creating a new TC
 title: "[TC] "
 labels:
@@ -20,6 +20,14 @@ body:
     validations:
       required: true
 
+  - type: textarea
+    id: tc_description
+    attributes:
+      label: "Description"
+      description: "Overview of the test case"
+      placeholder: "Enter description of the test case"
+    validations:
+      required: true
 
   - type: textarea
     id: tc_preconditions
@@ -48,11 +56,11 @@ body:
     validations:
       required: true
 
-  - type: file
-    id: tc_screenshot
+  - type: input
+    id: tc_screenshot_url
     attributes:
-      label: "Screenshot"
-      description: "Upload a screenshot if needed"
-      accept: "image/*"
+      label: "Screenshot URL"
+      description: "Provide a URL to the screenshot"
+      placeholder: "Enter screenshot URL"
     validations:
       required: false
