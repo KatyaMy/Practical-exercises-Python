@@ -1,13 +1,10 @@
-checklist:
-  - item: "Check if the page loads correctly"
-    description: "Ensure that the page is accessible and loads within 3 seconds."
-    status: "not started"
-    priority: "high"
-  - item: "Verify responsive design"
-    description: "Ensure the layout adjusts correctly on various screen sizes."
-    status: "in progress"
-    priority: "medium"
-  - item: "Test all buttons for functionality"
-    description: "Click all buttons to ensure they lead to the correct destinations."
-    status: "completed"
-    priority: "high"
+## Чек-лист для тестирования страницы
+
+- [ ] Проверить, что страница загружается корректно
+- [ ] Проверить адаптивность дизайна (проверить на различных устройствах)
+- [ ] Проверить функциональность всех кнопок
+- [ ] Проверить все ссылки на наличие 404 ошибок
+- [ ] Проверить доступность страницы (наличие alt-тегов для изображений, доступность для экранных читалок)
+- [ ] Проверить валидацию форм (обязательные поля, сообщения об ошибках)
+- [ ] Проверить выравнивание и отступы элементов
+- [ ] Проверить актуальность контента
