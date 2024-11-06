@@ -1,11 +1,11 @@
-test_case:
-  title: "" 
-  description: "" 
-  steps: 
-    - step: "" 
-      expected_result: "" 
-  expected_result: "" 
-  status: "" 
-  priority: "" 
-  created_by: "" 
-  created_on: "" 
+test:
+  title: ""
+  description: ""
+  steps:
+    - step: ""
+      expected_result: ""
+  expected_result: ""
+  status: ""
+  priority: ""
+  created_by: ""
+  created_on: ""
