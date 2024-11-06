@@ -1,6 +1,6 @@
 name: Test Case
 description: Template for creating a new TC
-title: "[TC] {{tc_id}}"  # Dynamically set the title based on tc_id
+title: "{{tc_id}} | {{tc_title}}"  # Combine TC ID and descriptive title in one line
 labels:
   - task
 assignees: []  # Leave blank to allow assignment later
@@ -17,6 +17,15 @@ body:
       label: "Test Case ID"
       description: "Unique identifier for the test case"
       placeholder: "TC_000.000.000"
+    validations:
+      required: true
+
+  - type: input
+    id: tc_title
+    attributes:
+      label: "Test Case Title"
+      description: "A brief title or description for the test case"
+      placeholder: "Sale > Multiple discounts > Purchase more than $200"
     validations:
       required: true
 
