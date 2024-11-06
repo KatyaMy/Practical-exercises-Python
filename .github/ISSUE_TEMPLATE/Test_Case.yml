@@ -15,7 +15,7 @@ body:
     attributes:
       label: "Test Case Details"
       description: "Enter both Test Case ID and Title in the format: TC_000.000.000 | Test Case Title"
-      placeholder: "TC_011.017.001|Sale>Multiple discounts > Purchase more than $200"
+      placeholder: 
     validations:
       required: true
 
