@@ -1,6 +1,5 @@
-config:
-  test_case:
-    title: ""
+tests:
+  - name: ""
     description: ""
     steps:
       - step: ""
