@@ -1,6 +1,6 @@
 name: Test Case
 description: Template for creating a new TC
-title: "[TC] "
+title: "[TC] {{tc_id}}"  # Dynamically set the title based on tc_id
 labels:
   - task
 assignees: []  # Leave blank to allow assignment later
