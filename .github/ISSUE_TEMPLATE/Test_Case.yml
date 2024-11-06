@@ -20,14 +20,6 @@ body:
     validations:
       required: true
 
-  - type: textarea
-    id: tc_description
-    attributes:
-      label: "Description"
-      description: "Overview of the test case"
-      placeholder: "Enter description of the test case"
-    validations:
-      required: true
 
   - type: textarea
     id: tc_preconditions
