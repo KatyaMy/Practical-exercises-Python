@@ -2,7 +2,7 @@ name: Test Case
 description: Template for creating a new TC
 title: "[TC] "
 labels:
-  - test_case
+  - task
 assignees: []  # Leave blank to allow assignment later
 
 body:
@@ -48,11 +48,11 @@ body:
     validations:
       required: true
 
-  - type: textarea
-    id: tc_notifications
+  - type: file
+    id: tc_screenshot
     attributes:
-      label: "Notifications"
-      description: "Any notifications related to the test case"
-      placeholder: "Enter notifications"
+      label: "Screenshot"
+      description: "Upload a screenshot if needed"
+      accept: "image/*"
     validations:
       required: false
