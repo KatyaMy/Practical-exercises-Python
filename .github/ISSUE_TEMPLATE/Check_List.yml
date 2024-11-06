@@ -1,48 +1,124 @@
 name: "Login Field Validation Checklist"
-description: "Checklist for validating the login fields functionality on the login page."
+description: "Checklist for validating login fields functionality."
 
 body:
   - type: markdown
-    value: |
+    key: "checklist_intro"
+    content: |
       **Login Field Validation Checklist:**
 
-  - type: checklist
-    id: "login_field_validation"
-    label: "Login Field Validation"
+  - type: input
+    key: "login_field_displayed"
+    label: "Check if the 'Login' field is displayed."
+    required: true
     options:
-      - label: "Check if the 'Login' field is displayed."
-        value: false
-      - label: "Check if the 'Password' field is displayed."
-        value: false
-      - label: "Ensure the 'Login' field accepts only text (no numbers, special characters unless allowed)."
-        value: false
-      - label: "Check if the 'Password' field hides entered characters."
-        value: false
-      - label: "Ensure 'Password' field accepts combinations of letters, numbers, and special characters."
-        value: false
-      - label: "Check if the 'Login' field does not accept empty values."
-        value: false
-      - label: "Check if the 'Password' field does not accept empty values."
-        value: false
-      - label: "Ensure that an error message appears when fields are left empty (e.g., 'This field is required')."
-        value: false
-      - label: "Ensure the 'Login' field accepts valid email format (if required)."
-        value: false
-      - label: "Ensure the 'Password' field requires a minimum length (e.g., 8 characters)."
-        value: false
-      - label: "Ensure that the 'Login' and 'Password' fields work correctly when filled."
-        value: false
-      - label: "Ensure the 'Login' button is only enabled when both fields are filled correctly."
-        value: false
-      - label: "Check if clicking 'Login' with incorrect credentials displays an error message."
-        value: false
-      - label: "Check if 'Forgot password' link works correctly."
-        value: false
-      - label: "Verify if the 'Login' fields are compatible across browsers (Chrome, Firefox, Safari, Edge)."
-        value: false
-      - label: "Check if 'Remember me' functionality works correctly (if available)."
-        value: false
-      - label: "Ensure the 'Password' field does not show input when 'eye' icon is clicked (if available)."
-        value: false
-      - label: "Ensure login page is protected from brute-force attacks (rate-limiting attempts)."
-        value: false
+      - true
+      - false
+
+  - type: input
+    key: "password_field_displayed"
+    label: "Check if the 'Password' field is displayed."
+    required: true
+    options:
+      - true
+      - false
+
+  - type: input
+    key: "login_field_text_validation"
+    label: "Ensure the 'Login' field accepts only text (no numbers, special characters unless allowed)."
+    required: true
+    options:
+      - true
+      - false
+
+  - type: input
+    key: "password_field_character_hiding"
+    label: "Check if the 'Password' field hides entered characters."
+    required: true
+    options:
+      - true
+      - false
+
+  - type: input
+    key: "password_field_validation"
+    label: "Ensure 'Password' field accepts combinations of letters, numbers, and special characters."
+    required: true
+    options:
+      - true
+      - false
+
+  - type: input
+    key: "login_field_empty_check"
+    label: "Check if the 'Login' field does not accept empty values."
+    required: true
+    options:
+      - true
+      - false
+
+  - type: input
+    key: "password_field_empty_check"
+    label: "Check if the 'Password' field does not accept empty values."
+    required: true
+    options:
+      - true
+      - false
+
+  - type: input
+    key: "error_message_empty_fields"
+    label: "Ensure that an error message appears when fields are left empty (e.g., 'This field is required')."
+    required: true
+    options:
+      - true
+      - false
+
+  - type: input
+    key: "email_format_check"
+    label: "Ensure the 'Login' field accepts valid email format (if required)."
+    required: true
+    options:
+      - true
+      - false
+
+  - type: input
+    key: "password_minimum_length"
+    label: "Ensure the 'Password' field requires a minimum length (e.g., 8 characters)."
+    required: true
+    options:
+      - true
+      - false
+
+  - type: input
+    key: "login_button_enabled_check"
+    label: "Ensure the 'Login' button is only enabled when both fields are filled correctly."
+    required: true
+    options:
+      - true
+      - false
+
+  - type: input
+    key: "error_on_incorrect_credentials"
+    label: "Check if clicking 'Login' with incorrect credentials displays an error message."
+    required: true
+    options:
+      - true
+      - false
+
+  - type: input
+    key: "forgot_password_link_check"
+    label: "Check if 'Forgot password' link works correctly."
+    required: true
+    options:
+      - true
+      - false
+
+  - type: input
+    key: "browser_compatibility_check"
+    label: "Verify if the 'Login' fields are compatible across browsers (Chrome, Firefox, Safari, Edge)."
+    required: true
+    options:
+      - true
+      - false
+
+  - type: input
+    key: "remember_me_check"
+    labe
