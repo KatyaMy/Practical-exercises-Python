@@ -1,7 +1,7 @@
 name: "Login Field Validation Checklist"
-description: "Checklist for validating login fields functionality."
+description: "Checklist for validating the login fields functionality on the login page."
 
-fields:
+body:
   - type: markdown
     value: |
       **Login Field Validation Checklist:**
