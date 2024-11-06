@@ -1,12 +1,63 @@
-tests:
-  - name: ""
-    description: ""
-    steps:
-      - step: ""
-        expected_result: ""
-    expected_result: ""
-    status: ""
-    priority: ""
-    created_by: ""
-    created_on: ""
+name: TC
+description: Template for creating a new TC
+title: "[TC] "
+labels: 
+  - task
+assignees: []  # Leave blank to allow assignment later
 
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Fill in the details for the new TC:**
+
+  - type: textarea
+    id: tc_description
+    attributes:
+      label: "Description"
+      description: "Details of the TC"
+      placeholder: "Enter TC details"
+    validations:
+      required: true
+
+  - type: input
+    id: tc_due_date
+    attributes:
+      label: "Due Date"
+      description: "Deadline for the TC"
+      placeholder: "YYYY-MM-DD"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: tc_priority
+    attributes:
+      label: "Priority"
+      description: "Select TC priority"
+      options:
+        - label: "High"
+        - label: "Medium"
+        - label: "Low"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: tc_status
+    attributes:
+      label: "Status"
+      description: "Current status of the TC"
+      options:
+        - "To Do"
+        - "In Progress"
+        - "Done"         
+    validations:
+      required: true
+
+  - type: textarea
+    id: tc_additional_notes
+    attributes:
+      label: "Notes"
+      description: "Any additional comments"
+      placeholder: "Enter notes"
+    validations:
+      required: false
