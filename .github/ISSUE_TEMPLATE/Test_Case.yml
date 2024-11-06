@@ -1,7 +1,7 @@
-name: Test Case
+name: TC
 description: Template for creating a new TC
 title: "[TC] "
-labels: 
+labels:
   - task
 assignees: []  # Leave blank to allow assignment later
 
@@ -9,55 +9,58 @@ body:
   - type: markdown
     attributes:
       value: |
-        **Fill in the details for the new TC:**
+        **Test Case (TC) Details:**
+
+  - type: input
+    id: tc_id
+    attributes:
+      label: "Test Case ID"
+      description: "Unique identifier for the test case"
+      placeholder: "TC_000.000.000"
+    validations:
+      required: true
 
   - type: textarea
     id: tc_description
     attributes:
       label: "Description"
-      description: "Details of the TC"
-      placeholder: "Enter TC details"
-    validations:
-      required: true
-
-  - type: input
-    id: tc_due_date
-    attributes:
-      label: "Due Date"
-      description: "Deadline for the TC"
-      placeholder: "YYYY-MM-DD"
-    validations:
-      required: true
-
-  - type: checkboxes
-    id: tc_priority
-    attributes:
-      label: "Priority"
-      description: "Select TC priority"
-      options:
-        - label: "High"
-        - label: "Medium"
-        - label: "Low"
-    validations:
-      required: true
-
-  - type: dropdown
-    id: tc_status
-    attributes:
-      label: "Status"
-      description: "Current status of the TC"
-      options:
-        - "To Do"
-        - "In Progress"
-        - "Done"         
+      description: "Overview of the test case"
+      placeholder: "Enter description of the test case"
     validations:
       required: true
 
   - type: textarea
-    id: tc_additional_notes
+    id: tc_preconditions
     attributes:
-      label: "Notes"
-      description: "Any additional comments"
-      placeholder: "Enter notes"
+      label: "Preconditions"
+      description: "Any conditions that must be met before executing the test"
+      placeholder: "Enter preconditions"
+    validations:
+      required: true
+
+  - type: textarea
+    id: tc_steps
+    attributes:
+      label: "Steps"
+      description: "Steps to execute the test case"
+      placeholder: "Enter test case steps"
+    validations:
+      required: true
+
+  - type: textarea
+    id: tc_expected_results
+    attributes:
+      label: "Expected Results"
+      description: "The expected outcome after executing the test case"
+      placeholder: "Enter expected results"
+    validations:
+      required: true
+
+  - type: textarea
+    id: tc_notifications
+    attributes:
+      label: "Notifications"
+      description: "Any notifications related to the test case"
+      placeholder: "Enter notifications"
     validations:
       required: false
