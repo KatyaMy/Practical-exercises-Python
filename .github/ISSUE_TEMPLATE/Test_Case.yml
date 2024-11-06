@@ -2,7 +2,7 @@ name: Test Case
 description: Template for creating a new TC
 title: "[TC] "
 labels:
-  - task
+  - test_case
 assignees: []  # Leave blank to allow assignment later
 
 body:
