@@ -65,11 +65,3 @@ body:
     validations:
       required: true
 
-  - type: input
-    id: tc_screenshot_url
-    attributes:
-      label: "Screenshot URL"
-      description: "Provide a URL to the screenshot"
-      placeholder: "Enter screenshot URL"
-    validations:
-      required: false
