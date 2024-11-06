@@ -15,9 +15,16 @@ body:
     attributes:
       label: "Test Case Details"
       description: "Enter both Test Case ID and Title in the format: TC_000.000.000 | Test Case Title"
-      placeholder: 
+      placeholder: "TC_011.017.001|Sale>Multiple discounts > Purchase more than $200"
     validations:
       required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        **Preconditions:**
+        - Browsers: List the browsers where the issue was observed.
+        - OS: List the impacted operating systems.
 
   - type: dropdown
     id: browsers
@@ -65,3 +72,11 @@ body:
     validations:
       required: true
 
+  - type: input
+    id: tc_screenshot_url
+    attributes:
+      label: "Screenshot URL"
+      description: "Provide a URL to the screenshot"
+      placeholder: "Enter screenshot URL"
+    validations:
+      required: false
