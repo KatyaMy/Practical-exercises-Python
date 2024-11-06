@@ -1,5 +1,5 @@
-username = "TestUser_1"
-password = "test5test78"
+user_name = "TestUser_1"
+c_password = "test5test78"
 
 incorrect_username = "TestUser"
 incorrect_password = "Passwordfortestuser123"
