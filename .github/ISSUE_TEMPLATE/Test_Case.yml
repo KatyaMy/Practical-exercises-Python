@@ -1,19 +1,11 @@
-title: 
-id: 
-description: 
-preconditions:
-  - 
-test_steps:
-  - step: 
-    expected_result: 
-  - step: 
-    expected_result: 
-  - step: 
-    expected_result: 
-postconditions:
-  - 
-expected_result: 
-status: 
-priority: 
-created_by: 
-created_on: 
+test_case:
+  title: "" 
+  description: "" 
+  steps: 
+    - step: "" 
+      expected_result: "" 
+  expected_result: "" 
+  status: "" 
+  priority: "" 
+  created_by: "" 
+  created_on: "" 
