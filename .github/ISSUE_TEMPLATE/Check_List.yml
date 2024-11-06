@@ -1,5 +1,13 @@
-tests:
-  - description: "Проверка поля для ввода логина"
-    steps:
-      - action: "Убедитесь, что поле для ввода логина отображается корректно и доступно для ввода."
-        expected_result: "Поле для ввода логина видно, доступно и не имеет ошибок."
+checklist:
+  - item: "Check if the page loads correctly"
+    description: "Ensure that the page is accessible and loads within 3 seconds."
+    status: "not started"
+    priority: "high"
+  - item: "Verify responsive design"
+    description: "Ensure the layout adjusts correctly on various screen sizes."
+    status: "in progress"
+    priority: "medium"
+  - item: "Test all buttons for functionality"
+    description: "Click all buttons to ensure they lead to the correct destinations."
+    status: "completed"
+    priority: "high"
