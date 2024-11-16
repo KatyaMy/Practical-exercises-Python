@@ -1,18 +1,10 @@
-import time
 import allure
-import os
+
 from tests_tutors_web.locators import Login, TutorProfile
 from tests_tutors_web.data import *
 from tests_tutors_web.pages.page_login import LoginPage
-from dotenv import load_dotenv
+from tests_tutors_web.config import WEB_USERNAME, WEB_PASSWORD, T_PASSWORD, T_NAME
 
-load_dotenv(dotenv_path='Practical-exercises-Python/.env')  # Загружает переменные из .env файла
-
-USERNAME = os.getenv("WEB_USERNAME")
-PASSWORD = os.getenv("USER_PASSWORD")
-
-T_NAME = os.getenv("TUTOR_NAME")
-T_PASSWORD = os.getenv("TUTOR_PASSWORD")
 # links
 signup_link = "http://195.133.27.184/signup/"
 login_link = "http://195.133.27.184/login/"
@@ -22,7 +14,7 @@ main_page_link = "http://195.133.27.184/list/"
 @allure.title("Login_user")
 def test_login_user(driver):
     login_page = LoginPage(driver)
-    login_page.sign_in(USERNAME, PASSWORD)
+    login_page.sign_in(WEB_USERNAME, WEB_PASSWORD)
     assert driver.current_url == main_page_link, 'Login Failed'
 
 
@@ -38,7 +30,7 @@ def test_login_tutor(driver):
 @allure.description('Positive test--MMS element is displayed')
 def test_incorrect_password(driver, wait):
     login_page = LoginPage(driver)
-    login_page.sign_in(USERNAME, incorrect_password)
+    login_page.sign_in(WEB_USERNAME, incorrect_password)
     assert driver.current_url == main_page_link, 'User not found'
 
 
@@ -46,7 +38,7 @@ def test_incorrect_password(driver, wait):
 @allure.description('Positive test--MMS element is displayed')
 def test_incorrect_login_mms(driver, wait):
     login_page = LoginPage(driver)
-    login_page.sign_in(incorrect_username, PASSWORD)
+    login_page.sign_in(incorrect_username, WEB_PASSWORD)
     element = driver.find_element(*Login.alert_mms).text
     assert element == mms_login_alert, "Alert MMS element is not displayed"
     assert driver.current_url == main_page_link, 'User not found'
