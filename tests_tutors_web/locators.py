@@ -8,6 +8,7 @@ class SignUp:
     submit_button = By.CSS_SELECTOR, '[type="submit"]'
     btn_logout = By.XPATH, '//a[@href="/logout/"]'
     checkbox = By.ID, 'id_is_tutor'
+    mms_error = By.XPATH, "//ul[@class='errorlist']"
 
 
 class Login:

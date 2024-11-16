@@ -1,14 +1,14 @@
 import time
 import allure
 import os
-from tests_tutors_web.locators import Login
+from tests_tutors_web.locators import Login, TutorProfile
 from tests_tutors_web.data import *
 from tests_tutors_web.pages.page_login import LoginPage
 from dotenv import load_dotenv
 
-load_dotenv(dotenv_path='./Practical-exercises-Python/.env')  # Загружает переменные из .env файла
+load_dotenv(dotenv_path='Practical-exercises-Python/.env')  # Загружает переменные из .env файла
 
-USERNAME = os.getenv("USERNAME")
+USERNAME = os.getenv("WEB_USERNAME")
 PASSWORD = os.getenv("USER_PASSWORD")
 
 T_NAME = os.getenv("TUTOR_NAME")
@@ -19,11 +19,19 @@ login_link = "http://195.133.27.184/login/"
 main_page_link = "http://195.133.27.184/list/"
 
 
-@allure.title("Login")
+@allure.title("Login_user")
 def test_login_user(driver):
     login_page = LoginPage(driver)
     login_page.sign_in(USERNAME, PASSWORD)
     assert driver.current_url == main_page_link, 'Login Failed'
+
+
+@allure.title("Login_tutor")
+def test_login_tutor(driver):
+    login_page = LoginPage(driver)
+    login_page.sign_in(T_NAME, T_PASSWORD)
+    btn_create_case = driver.find_elements(*TutorProfile.create_case)
+    assert btn_create_case[0].is_displayed(), 'Login is Failed'
 
 
 @allure.title('Incorrect password-user not found')
@@ -51,10 +59,3 @@ def test_empty_filed_validation(driver, wait):
     alert_mms_password = login_page.get_password_error_text()
     assert alert_mms_login == mms_empty_login, "The login error message is not as expected"
     assert alert_mms_password == mms_empty_password, "The password error message is not as expected"
-
-
-@allure.title("Login_tutor")
-def test_login_tutor(driver):
-    login_page = LoginPage(driver)
-    login_page.sign_in(T_NAME, T_PASSWORD)
-    assert driver.current_url == main_page_link, 'Login Failed'

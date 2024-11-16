@@ -18,7 +18,7 @@ body:
     attributes:
       label: "Reproduction URL"
       description: Please enter your GitHub URL to provide a reproduction of the issue
-      placeholder: ex. https://github.com/USERNAME/REPO-NAME
+      placeholder: ex. https://github.com/WEB_USERNAME/REPO-NAME
     validations:
       required: true
   - type: textarea

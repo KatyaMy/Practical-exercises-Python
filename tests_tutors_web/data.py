@@ -6,3 +6,4 @@ mms_login_alert = (
 
 mms_empty_password = 'Обязательное поле.'
 mms_empty_login = 'Обязательное поле.'
+mms_error = 'Пользователь с таким именем уже существует.'
