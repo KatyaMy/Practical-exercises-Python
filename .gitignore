@@ -15,6 +15,6 @@ __pycache__/
 *~
 # Ignore Allure results and reports
 allure-results/
-allure-reports/
+allure_reports/
 .env
 
