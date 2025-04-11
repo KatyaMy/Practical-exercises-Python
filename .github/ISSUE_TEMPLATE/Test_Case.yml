@@ -46,18 +46,18 @@ body:
     # validations:
     #   required: false
 
-  - type: dropdown
-    id: os
-    attributes:
-      label: "OS"
-      description: "What is the impacted environment?"
-      multiple: false
-      options:
-        - Windows
-        - Linux
-        - Mac
-    validations:
-      required: false
+  # - type: dropdown
+  #   id: os
+  #   attributes:
+  #     label: "OS"
+  #     description: "What is the impacted environment?"
+  #     multiple: false
+  #     options:
+  #       - Windows
+  #       - Linux
+  #       - Mac
+  #   validations:
+  #     required: false
 
   - type: textarea
     id: tc_steps
