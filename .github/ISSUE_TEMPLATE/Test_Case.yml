@@ -33,8 +33,8 @@ body:
   - type: textarea
     id: precondition
     attributes:
-      label: "Steps"
-      description: "Steps to execute the test case"
+      label: "Precondition"
+      description: "Steps"
       placeholder: "Enter precondition"
     validations:
       required: true      
