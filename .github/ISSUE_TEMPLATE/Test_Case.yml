@@ -30,7 +30,14 @@ body:
     attributes:
       value: |
         **Preconditions:**
-        
+  - type: textarea
+    id: precondition
+    attributes:
+      label: "Steps"
+      description: "Steps to execute the test case"
+      placeholder: "Enter precondition"
+    validations:
+      required: true      
   # - type: dropdown
   #   id: browsers
   #   attributes:
