@@ -1,69 +1,27 @@
 name: Test Case 
 description: Use this template to create a new test case
-title: "[Test Case] <Empty>"
-labels: ["test-case"]
-assignees: []
 
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Please provide details for the test case:
-          
   - type: input
     id: tc_details
     attributes:
       label: "Test Case"
       description: "Enter both Test Case ID and Title in the format: TC_00.000.000 | Epic Name > User Story Name > Test Case Name"
-      # placeholder: "TC_011.017.001|Sale>Multiple discounts > Purchase more than $200"
     validations:
       required: true
 
+  - type: markdown
+    attributes:
+      value: |
+        Please provide details for the test case:
+          
   - type: textarea
     id: precondition
     attributes:
       label: "Precondition"
       description: "What needs to be set up before the test"
-      # placeholder: "Enter precondition"
     validations:
       required: true  
-      
-  # - type: dropdown
-  #   id: browsers
-  #   attributes:
-  #     label: "Browsers"
-  #     description: "What browsers do you see the problem on?"
-    #   multiple: true
-    #   options:
-    #     - Firefox
-    #     - Chrome
-    #     - Safari
-    #     - Microsoft Edge
-    #     - Opera
-    # validations:
-    #   required: false
-
-  # - type: dropdown
-  #   id: os
-  #   attributes:
-  #     label: "OS"
-  #     description: "What is the impacted environment?"
-  #     multiple: false
-  #     options:
-  #       - Windows
-  #       - Linux
-  #       - Mac
-  #   validations:
-  #     required: false
-
-  # - type: textarea
-  #   id: tc_steps
-  #   attributes:
-  #     label: "Steps"
-  #     description: "Steps to execute the test case"
-  #     placeholder: "Enter test case steps"
-  #   validations:
-  #     required: true
 
   - type: textarea
     id: tc_expected_results
@@ -71,17 +29,14 @@ body:
       label: "Expected Results"
       description: "What should happen"
       placeholder: "Enter expected results"
-      validations:
-        required: true
+    validations:
+      required: true
       
   - type: textarea
     id: acceptance_criteria
     attributes:
-      label: "Acceptance Criteria"
-      description: "By [Action/Trigger], the user can access [Feature/Functionality].
-      \nClicking on [Element] opens [Page/Section], where [Feature/Functionality] is also available in [Location]."
-      validations:
-        required: False
+      label: "Acceptance
+
     
 
 
