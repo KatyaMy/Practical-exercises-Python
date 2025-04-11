@@ -1,0 +1,14 @@
+name: Assign Issue Creator
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  assign:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Assign issue creator
+        uses: peter-evans/issue-assigner@v2
+        with:
+          assignees: ${{ github.actor }}
