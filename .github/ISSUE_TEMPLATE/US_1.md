@@ -2,7 +2,7 @@ name: User story - Shopping List
 about: A user story template for describing shopping list item features.
 title: ''
 labels: ["User story"]
-assignees: '@me'
+assignees: ' '
 
 ---
 
