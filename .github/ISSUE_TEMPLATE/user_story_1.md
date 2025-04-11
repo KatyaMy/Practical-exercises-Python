@@ -4,7 +4,7 @@ about: Шаблон для создания теста
 title: '[Test Case]: '
 labels: ['test case']
 assignees:
-  - '@me'
+  - 'username' 
 ---
 
 **Описание теста:**
