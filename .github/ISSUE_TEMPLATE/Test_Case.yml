@@ -26,10 +26,10 @@ body:
     validations:
       required: true
 
-  - type: textarea
-    attributes:
-      value: |
-        **Preconditions:**
+  # - type: textarea
+  #   attributes:
+  #     value: |
+  #       **Preconditions:**
   - type: textarea
     id: precondition
     attributes:
