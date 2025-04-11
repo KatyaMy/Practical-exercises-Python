@@ -1,12 +1,4 @@
 name: Test Case Details
-- type: input
-    id: tc_details
-    attributes:
-      label: "Test Case Details"
-      description: "Enter both Test Case ID and Title in the format: TC_000.000.000 | Test Case Title"
-      placeholder: "TC_011.017.001|Sale>Multiple discounts > Purchase more than $200"
-    validations:
-      required: true
 body:
   - type: input
     id: tc_details
@@ -29,7 +21,7 @@ body:
     attributes:
       label: "Browsers"
       description: "What browsers do you see the problem on?"
-      multiple: True
+      multiple: true
       options:
         - Firefox
         - Chrome
@@ -37,20 +29,20 @@ body:
         - Microsoft Edge
         - Opera
     validations:
-      required: False
+      required: false
 
   - type: dropdown
     id: os
     attributes:
       label: "OS"
       description: "What is the impacted environment?"
-      multiple: False
+      multiple: false
       options:
         - Windows
         - Linux
         - Mac
     validations:
-      required: False
+      required: false
 
   - type: textarea
     id: tc_steps
