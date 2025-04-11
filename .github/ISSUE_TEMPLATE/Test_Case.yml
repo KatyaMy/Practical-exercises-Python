@@ -27,18 +27,15 @@ body:
     validations:
       required: true
 
-  # - type: textarea
-  #   attributes:
-  #     value: |
-  #       **Preconditions:**
   - type: textarea
     id: precondition
     attributes:
       label: "Precondition"
-      description: "Steps"
+      description: "What needs to be set up before the test"
       placeholder: "Enter precondition"
     validations:
-      required: true      
+      required: true   
+      
   # - type: dropdown
   #   id: browsers
   #   attributes:
