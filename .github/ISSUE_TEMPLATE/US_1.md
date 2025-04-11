@@ -3,7 +3,7 @@ name: User story
 about: Describe story shoppingListItem
 title: ''
 labels: User story
-assignees: [@me]
+assignees: [@me]()
 
 ---
 
