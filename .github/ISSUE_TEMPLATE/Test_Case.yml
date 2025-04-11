@@ -3,9 +3,6 @@ description: Template for creating a new TC
 
 body:
   - type: markdown
-    attributes:
-      value: |
-        **Test Case (TC) Details:**
   - type: input
     id: tc_details
     attributes:
