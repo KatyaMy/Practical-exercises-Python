@@ -4,10 +4,11 @@ test_case:
   user_story_name: "User Story Name"
   test_case_name: "Test Case Name"
 
-  preconditions:
+  preconditions: 
     - "What needs to be set up before the test"
-
-  description: "Brief description of the test case"
+  
+  description: |
+    Thank you for reporting a bug!
 
   steps:
     - "Step 1"
@@ -16,7 +17,7 @@ test_case:
 
   expected_result: "What should happen"
 
-  comments_notes:
+  comments_notes: 
     - "Additional details"
     - "Attachments"
     - "Logs"
