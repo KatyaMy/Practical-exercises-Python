@@ -1,23 +1,15 @@
 name: Test Case 
 description: Use this template to create a new test case
-title: "[Test Case] <Enter test case title>"
+title: "[Test Case] <Empty>"
 labels: ["test-case"]
 assignees: []
+
 body:
   - type: markdown
     attributes:
       value: |
         Please provide details for the test case:
-        
-  # - type: textarea
-  #   id: tc_steps
-  #   attributes:
-  #     label: "Steps"
-  #     description: "Steps to execute the test case"
-  #     placeholder: "Enter test case steps"
-  #   validations:
-  #     required: true
-      
+          
   - type: input
     id: tc_details
     attributes:
