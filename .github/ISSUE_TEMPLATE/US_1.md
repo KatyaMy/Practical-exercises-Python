@@ -1,9 +1,9 @@
 ---
-name: User story
-about: Describe story shoppingListItem
-title: ''
-labels: User story
-assignees: [@me]()
+name: User Story
+description: Use this template to create a new user story
+title: "US_00.000 | Feature > Story title"
+labels: ["User story"]
+assignees: [@me]
 
 ---
 
