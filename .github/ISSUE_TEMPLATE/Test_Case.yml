@@ -77,10 +77,9 @@ body:
   - type: textarea
     id: acceptance_criteria
     attributes:
-      label: "Acceptance Criteria"
       description: "By [Action/Trigger], the user can access [Feature/Functionality].
       \nClicking on [Element] opens [Page/Section], where [Feature/Functionality] is also available in [Location]."
-      
+      label: "Acceptance Criteria"       
     validations:
       required: False
     
