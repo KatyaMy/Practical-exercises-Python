@@ -30,8 +30,8 @@ body:
     attributes:
       value: |
         **Preconditions:**
-        - 
-        - 
+        
+        
 
   - type: dropdown
     id: browsers
