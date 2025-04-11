@@ -9,12 +9,12 @@ body:
       value: |
         Please provide details for the test case:
         
-  - type: input
-    id: test-case-id
+  - type: textarea
+    id: tc_steps
     attributes:
-      label: Test Case ID
-      description: 'Unique identifier for the test case'
-      placeholder: "Enter the test case ID"
+      label: "Steps"
+      description: "Steps to execute the test case"
+      placeholder: "Enter test case steps"
     validations:
       required: true
   - type: input
