@@ -1,39 +1,32 @@
-name: User story - Shopping List
-about: A user story template for describing shopping list item features.
-title: ''
-labels: ["User story"]
-assignees: ' '
+---
+name: User Story
+about: Шаблон для написания пользовательской истории
+title: '[Story]: '
+labels: ['user story']
+assignees:
+  - '@me'
+---
+
+**Формат user story:**
+
+**Как** <роль> **я хочу** <цель> **чтобы** <ценность>
 
 ---
 
-**As a** <role> **I want to** <goal> **so that** <benefit>
+### Assumptions & Constraints
+_Например: Пользователь должен быть авторизован..._
 
-**Assumptions & Constraints**
-1. Listed assumptions, constraints, and dependencies relevant to this specific story.
-   - Assumptions are factors believed to be true, but not yet confirmed.
-   - Constraints are restrictions on possible solutions.
+### Preconditions
+_Например: Система должна быть в состоянии ..._
 
-**Preconditions**
-1. Listed preconditions relevant to this specific story.
-
-**Business rules**
-1. Listed Business Rules (include corporate policies, regulations, standards, or algorithms)
+### Business Rules
+_Например: НДС рассчитывается по ставке ..._
 
 ### Acceptance Criteria
-A clear and concise description of what you want to happen. Testable and measurable.
+_Например: Given пользователь на странице корзины, When он нажимает “Оформить заказ”, Then открывается форма оплаты_
 
-**Out of scope**
-- What is not included in this story
+### Out of Scope
+_Например: Способы доставки, обратная связь..._
 
-**Epic link**
-E.g.: Epic #100 [Epic]()
-
-**Labels to be added**
-- "User story"
-- Feature label (e.g. `shopping-list`)
-- Priority (e.g. `pri:high`)
-- Epic reference
-
-### Tasks 
-- [ ] Example task 1
-- [ ] Example task 2
+### Epic link
+_Epic #100_
