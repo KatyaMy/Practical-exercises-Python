@@ -9,7 +9,7 @@ body:
     attributes:
       value: |
         ⚠️ **Please update the issue title above with the correct test case ID and name**  
-        ID Format: ` TC_XX.YYY.ZZ | Epic Name > User Story Name > Test Case Name`
+            ID Format: ` TC_XX.YYY.ZZ | Epic Name > User Story Name > Test Case Name`
 
         Please fill out the following fields:
 
