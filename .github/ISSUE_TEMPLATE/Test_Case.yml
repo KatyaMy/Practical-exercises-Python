@@ -1,4 +1,21 @@
 name: Test Case Details
+description: Use this template to create a new test case
+title: "[Test Case] <Enter test case title>"
+labels: ["test-case"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please provide details for the test case:
+  - type: input
+    id: test-case-id
+    attributes:
+      label: Test Case ID
+      description: Unique identifier for the test case
+      placeholder: "Enter the test case ID"
+    validations:
+      required: true
 body:
   - type: input
     id: tc_details
