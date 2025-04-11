@@ -26,7 +26,7 @@ body:
     validations:
       required: true
 
-  - type: markdown
+  - type: textarea
     attributes:
       value: |
         **Preconditions:**
