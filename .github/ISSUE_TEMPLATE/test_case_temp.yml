@@ -1,0 +1,26 @@
+test_case:
+  id: TC_XX.YYY.ZZ
+  epic_name: "Epic Name"
+  user_story_name: "User Story Name"
+  test_case_name: "Test Case Name"
+
+  preconditions:
+    - "What needs to be set up before the test"
+
+  description: "Brief description of the test case"
+
+  steps:
+    - "Step 1"
+    - "Step 2"
+    - "Step 3"
+
+  expected_result: "What should happen"
+
+  comments_notes:
+    - "Additional details"
+    - "Attachments"
+    - "Logs"
+
+  acceptance_criteria:
+    - "By [Action/Trigger], the user can access [Feature/Functionality]."
+    - "Clicking on [Element] opens [Page/Section], where [Feature/Functionality] is also available in [Location]."
