@@ -1,5 +1,6 @@
 name: Test Case Details
 body:
+
   - type: input
     id: tc_details
     attributes:
