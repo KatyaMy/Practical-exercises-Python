@@ -2,7 +2,6 @@ name: Test Case
 description: Template for creating a new TC
 
 body:
-  - type: markdown
   - type: input
     id: tc_details
     attributes:
