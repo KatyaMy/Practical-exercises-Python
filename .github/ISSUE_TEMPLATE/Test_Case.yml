@@ -30,8 +30,8 @@ body:
     attributes:
       value: |
         **Preconditions:**
-        - Browsers: List the browsers where the issue was observed.
-        - OS: List the impacted operating systems.
+        - 
+        - 
 
   - type: dropdown
     id: browsers
