@@ -73,3 +73,14 @@ body:
       placeholder: "Enter expected results"
     validations:
       required: true
+      
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: "Acceptance Criteria"
+      description: "By [Action/Trigger], the user can access [Feature/Functionality]. Clicking on [Element] opens [Page/Section], where [Feature/Functionality] is also available in [Location]."
+    validations:
+      required: False
+    
+
+
