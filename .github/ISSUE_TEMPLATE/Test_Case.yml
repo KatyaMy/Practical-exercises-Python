@@ -1,5 +1,8 @@
 name: Test Case 
 description: Use this template to create a new test case
+title: "TC_00.000.000 | "  
+labels: ["test-case"]
+assignees: []
 
 body:
   - type: input
@@ -21,7 +24,7 @@ body:
       label: "Precondition"
       description: "What needs to be set up before the test"
     validations:
-      required: true  
+      required: true 
 
   - type: textarea
     id: tc_expected_results
