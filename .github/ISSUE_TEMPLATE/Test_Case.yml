@@ -68,17 +68,17 @@ body:
   - type: textarea
     id: tc_expected_results
     attributes:
-    value: |
-        By [Action/Trigger], the user can access [Feature/Functionality]
-    label: "Expected Results"
-    description: "What should happen"
-    placeholder: "Enter expected results"
-    validations:
-      required: true
+      label: "Expected Results"
+      description: "What should happen"
+      placeholder: "Enter expected results"
+      validations:
+        required: true
       
   - type: textarea
     id: acceptance_criteria
     attributes:
+      value: |
+        By [Action/Trigger], the user can access [Feature/Functionality]
       label: "Acceptance Criteria"
       description: "By [Action/Trigger], the user can access [Feature/Functionality].
       \nClicking on [Element] opens [Page/Section], where [Feature/Functionality] is also available in [Location]."
