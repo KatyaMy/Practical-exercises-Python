@@ -8,11 +8,12 @@ body:
     attributes:
       value: |
         Please provide details for the test case:
+        
   - type: input
     id: test-case-id
     attributes:
       label: Test Case ID
-      description: Unique identifier for the test case
+      description: 'Unique identifier for the test case'
       placeholder: "Enter the test case ID"
     validations:
       required: true
