@@ -1,4 +1,4 @@
-name: Test Case Details
+name: Test Case 
 description: Use this template to create a new test case
 title: "[Test Case] <Enter test case title>"
 labels: ["test-case"]
