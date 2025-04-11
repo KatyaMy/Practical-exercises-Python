@@ -17,7 +17,6 @@ body:
       placeholder: "Enter the test case ID"
     validations:
       required: true
-body:
   - type: input
     id: tc_details
     attributes:
@@ -67,14 +66,14 @@ body:
   #   validations:
   #     required: false
 
-  - type: textarea
-    id: tc_steps
-    attributes:
-      label: "Steps"
-      description: "Steps to execute the test case"
-      placeholder: "Enter test case steps"
-    validations:
-      required: true
+  # - type: textarea
+  #   id: tc_steps
+  #   attributes:
+  #     label: "Steps"
+  #     description: "Steps to execute the test case"
+  #     placeholder: "Enter test case steps"
+  #   validations:
+  #     required: true
 
   - type: textarea
     id: tc_expected_results
