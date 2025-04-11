@@ -1,9 +1,9 @@
 ---
-name: User Story
-description: Use this template to create a new user story
-title: "US_00.000 | Feature > Story title"
+name: User story - Shopping List
+about: A user story template for describing shopping list item features.
+title: ''
 labels: ["User story"]
-assignees: ["@me"]
+assignees: '@me'
 ---
 
 **As a** <role> **I want to** <goal> **so that** <benefit>
