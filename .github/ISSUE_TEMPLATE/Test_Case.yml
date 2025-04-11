@@ -24,9 +24,9 @@ body:
     attributes:
       label: "Precondition"
       description: "What needs to be set up before the test"
-      placeholder: "Enter precondition"
+      # placeholder: "Enter precondition"
     validations:
-    required: true  
+      required: true  
       
   # - type: dropdown
   #   id: browsers
