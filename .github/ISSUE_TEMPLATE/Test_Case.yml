@@ -77,7 +77,7 @@ body:
     id: tc_expected_results
     attributes:
       label: "Expected Results"
-      description: "The expected outcome after executing the test case"
+      description: "What should happen"
       placeholder: "Enter expected results"
     validations:
       required: true
