@@ -12,7 +12,18 @@ body:
       description: "Enter both Test Case ID and Title in the format: TC_00.000.000 | Epic Name > User Story Name > Test Case Name"
     validations:
       required: true
-
+ - type: textarea
+    id: tc_steps
+    attributes:
+      label: "Steps"
+      description: "Steps to execute the test case"
+      placeholder: |
+        1. Go to the main page
+        2. Click on 'Submit a request'
+        3. Fill in the form
+        4. Click 'Send'
+    validations:
+      required: true
   - type: markdown
     attributes:
       value: |
