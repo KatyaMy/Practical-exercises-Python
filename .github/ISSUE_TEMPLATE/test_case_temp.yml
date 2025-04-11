@@ -1,5 +1,5 @@
 test_case:
-  id: TC_XX.YYY.ZZ
+  id: "TC_XX.YYY.ZZ"
   epic_name: "Epic Name"
   user_story_name: "User Story Name"
   test_case_name: "Test Case Name"
