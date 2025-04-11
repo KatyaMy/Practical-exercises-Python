@@ -1,6 +1,4 @@
-name: Test Case
-description: Template for creating a new TC
-
+name: Test Case Details
 body:
   - type: input
     id: tc_details
