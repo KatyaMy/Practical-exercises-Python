@@ -31,11 +31,11 @@ body:
       value: |
         **Preconditions:**
         
-  - type: dropdown
-    id: browsers
-    attributes:
-      label: "Browsers"
-      description: "What browsers do you see the problem on?"
+  # - type: dropdown
+  #   id: browsers
+  #   attributes:
+  #     label: "Browsers"
+  #     description: "What browsers do you see the problem on?"
     #   multiple: true
     #   options:
     #     - Firefox
