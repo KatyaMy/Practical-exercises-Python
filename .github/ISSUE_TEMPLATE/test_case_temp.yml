@@ -6,7 +6,7 @@ labels: ["TC"]
 body:
   - type: markdown
     attributes:
-      value: 
+      value: >
         **ID**: TC_XX.YYY.ZZ  **Epic Name** > **User Story Name** > **Test Case Name**
 
   - type: textarea
