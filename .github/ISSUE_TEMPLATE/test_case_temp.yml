@@ -32,9 +32,10 @@ body:
     attributes:
       label: Steps
       placeholder: |
-        1.  
-        2.  
-        3. 
+        1. Open the application
+        2. Enter username and password  
+        3. Click on the login button
+        4. Verify that the user is redirected to the dashboard
     # labels: 
     # - TC
     validations:
