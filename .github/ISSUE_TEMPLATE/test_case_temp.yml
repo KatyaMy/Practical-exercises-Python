@@ -33,9 +33,20 @@ body:
         1.  
         2.  
         3. 
-    labels: 
-    - TC
+    # labels: 
+    # - TC
     validations:
       required: True
+
+  - type: textarea
+    id: Expected Result
+    attributes:
+      label: Expected Result
+      description: What should happen  
+    validations:
+      required: True
+
+   
+
 
 
