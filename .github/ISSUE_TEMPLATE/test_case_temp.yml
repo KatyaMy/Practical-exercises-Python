@@ -35,7 +35,7 @@ body:
       description: |
         What needs to be set up before the test
     validations:
-      required: False
+      required: True
         
   - type: textarea
     id: screenshots
