@@ -34,9 +34,10 @@ body:
     attributes:
       label: Precondition
       description: |
-        Please provide a description of your issue here, with a URL if you were able to reproduce the issue (see below)
-        If using a proxy or a CDN (e.g. CloudFlare) in front of gitea, please disable the proxy/CDN fully and connect to gitea directly to confirm the issue still persists without those services.
-
+        What needs to be set up before the test
+    validations:
+      required: False
+        
   - type: textarea
     id: screenshots
     attributes:
