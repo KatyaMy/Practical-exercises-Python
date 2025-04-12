@@ -29,9 +29,9 @@ body:
     id: Steps
     attributes:
       label: Steps:
-      placeholder:
-      [Step 1]  
-      [Step 2]  
-      [Step 3] 
+      placeholder: |
+        1.  
+        2.  
+        3. 
 
 
