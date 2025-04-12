@@ -33,7 +33,7 @@ body:
         1.  
         2.  
         3. 
-   labels: TC
+   # labels: TC
     validations:
       required: True
 
