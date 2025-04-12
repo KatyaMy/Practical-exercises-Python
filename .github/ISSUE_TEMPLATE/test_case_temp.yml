@@ -39,7 +39,7 @@ body:
       required: True
 
   - type: textarea
-    id: Expected Result
+    id: expected result
     attributes:
       label: Expected Result
       description: What should happen  
