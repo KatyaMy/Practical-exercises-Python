@@ -8,74 +8,30 @@ body:
         **ID**: TC_XX.YYY.ZZ  
         **Epic Name** > **User Story Name** > **Test Case Name**
 
-# ID: TC_XX.YYY.ZZ | Epic Name > User Story Name > Test Case Name
-
-# Preconditions: (What needs to be set up before the test)
-
-# Description: (Brief description of the test case)
-
-# Steps:
-
-# [Step 1]
-# [Step 2]
-# [Step 3]
-# Expected Result: (What should happen)
-
-# Comments / Notes: (Additional details, attachments, logs)
-
-# Acceptance Criteria:
-
-# By [Action/Trigger], the user can access [Feature/Functionality].
-# Clicking on [Element] opens [Page/Section], where [Feature/Functionality] is also available in [Location].
-
   - type: textarea
     id: precondition
     attributes:
-      label: Precondition
+      label: Precondition:
       description: |
         What needs to be set up before the test
     validations:
       required: True
-        
+
   - type: textarea
-    id: screenshots
+    id: description
     attributes:
-      label: Screenshots
-      description: Please provide at least 1 screenshot showing the issue.
+      label: Description:
+      description: Brief description of the test case
     validations:
-      required: False
+      required: True
 
-  # - type: input
-  #   id: gitea-ver
-  #   attributes:
-  #     label: Gitea Version
-  #     description: Gitea version (or commit reference) your instance is running
-  #   validations:
-  #     required: False
+  - type: textarea
+    id: Steps
+    attributes:
+      label: Steps:
+      placeholder:
+      [Step 1]  
+      [Step 2]  
+      [Step 3] 
 
-  # - type: dropdown
-  #   id: can-reproduce
-  #   attributes:
-  #     label: Can you reproduce the bug on the Gitea demo site?
-  #     description: |
-  #       If so, please provide a URL in the Description field
-  #       URL of Gitea demo: https://demo.gitea.com
-  #     options:
-  #       - "Yes"
-  #       - "No"
-  #   validations:
-  #     required: False
 
-  # - type: input
-  #   id: os-ver
-  #   attributes:
-  #     label: Operating System
-  #     description: The operating system you are using to access Gitea
-
-  # - type: input
-  #   id: browser-ver
-  #   attributes:
-  #     label: Browser Version
-  #     description: The browser and version that you are using to access Gitea
-  #   validations:
-      required: False
