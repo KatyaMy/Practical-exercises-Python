@@ -1,5 +1,7 @@
 name: Test Case Template
-description: The test case includes Acceptance Criteria in textual form, which it covers. This allows for a clear understanding of the specific requirements being verified by the test case.
+description: |
+  The test case includes Acceptance Criteria in textual form, which it covers. 
+  This allows for a clear understanding of the specific requirements being verified by the test case.
 labels: [""]
 body:
   - type: markdown
