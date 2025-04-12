@@ -6,14 +6,13 @@ labels: ["TC"]
 body:
   - type: markdown
     attributes:
-      value: |
-        **ID**: TC_XX.YYY.ZZ  
-        **Epic Name** > **User Story Name** > **Test Case Name**
+      value: 
+        **ID**: TC_XX.YYY.ZZ  **Epic Name** > **User Story Name** > **Test Case Name**
 
   - type: textarea
     id: precondition
     attributes:
-      label: Precondition
+      **label**: Precondition
       description: |
         What needs to be set up before the test
     validations:
