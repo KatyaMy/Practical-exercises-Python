@@ -9,7 +9,7 @@ assignees: me
 body:
   - type: markdown
     attributes:
-      placeholder: >
+      value: >
         **ID**: TC_XX.YYY.ZZ  **Epic Name** > **User Story Name** > **Test Case Name**
 
   - type: textarea
