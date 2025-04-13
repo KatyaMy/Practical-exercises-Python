@@ -15,9 +15,8 @@ body:
   - type: textarea
     id: id_test_case
     attributes:
-      label: ID
       placeholder: |
-         TC_XX.YYY.ZZ | Epic Name > User Story Name > Test Case Name
+         ID: TC_XX.YYY.ZZ | Epic Name > User Story Name > Test Case Name
     validations:
       required: True
 
