@@ -12,17 +12,11 @@ body:
       value: '**ID**: TC_XX.YYY.ZZ | Epic Name > User Story Name > Test Case Name'
 
   - type: input
-    id: browser-version
-    attributes:
-      label: Browser Version
-      placeholder: e.g. Chrome 124.0
-
-  - type: textarea
     id: id_test_case
     attributes:
       label: Test case id 
       placeholder: |
-         ID: TC_XX.YYY.ZZ | Epic Name > User Story Name > Test Case Name
+        e.g. ID: TC_XX.YYY.ZZ | Epic Name > User Story Name > Test Case Name
     validations:
       required: True
 
