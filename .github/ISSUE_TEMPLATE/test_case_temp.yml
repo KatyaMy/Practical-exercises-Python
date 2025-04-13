@@ -11,6 +11,12 @@ body:
     attributes:
       value: '**ID**: TC_XX.YYY.ZZ | Epic Name > User Story Name > Test Case Name'
 
+  - type: input
+    id: browser-version
+    attributes:
+      label: Browser Version
+      placeholder: e.g. Chrome 124.0
+
   - type: textarea
     id: id_test_case
     attributes:
@@ -66,16 +72,4 @@ body:
         Clicking on [Element] opens [Page/Section], where [Feature/Functionality] is also available in [Location].
     validations:
       required: True
-
-    - type: input
-      id: browser-version
-      attributes:
-        label: Browser Version
-        placeholder: e.g. Chrome 124.0
-  
-
-
-   
-
-
-
+ 
