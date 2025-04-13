@@ -13,6 +13,15 @@ body:
         **ID**: TC_XX.YYY.ZZ  **Epic Name** > **User Story Name** > **Test Case Name**
 
   - type: textarea
+    id: id_test_case
+    attributes:
+      label: ID
+       placeholder: |
+         TC_XX.YYY.ZZ | Epic Name > User Story Name > Test Case Name
+    validations:
+      required: True
+
+  - type: textarea
     id: precondition
     attributes:
       label: Precondition
