@@ -9,9 +9,8 @@ assignees: me
 body:
   - type: markdown
     attributes:
-      text: |
-        **ID**: `TC_XX.YYY.ZZ`  
-        Epic Name > User Story Name > Test Case Name 
+      text: >
+        **ID**: TC_XX.YYY.ZZ | Epic Name > User Story Name > Test Case Name 
 
   - type: textarea
     id: id_test_case
