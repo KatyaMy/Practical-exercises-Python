@@ -66,6 +66,12 @@ body:
         Clicking on [Element] opens [Page/Section], where [Feature/Functionality] is also available in [Location].
     validations:
       required: True
+
+    - type: input
+      id: browser-version
+      attributes:
+        label: Browser Version
+        placeholder: e.g. Chrome 124.0
   
 
 
