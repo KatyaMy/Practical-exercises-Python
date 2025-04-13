@@ -16,7 +16,7 @@ body:
     id: id_test_case
     attributes:
       label: ID
-       placeholder: |
+      placeholder: |
          TC_XX.YYY.ZZ | Epic Name > User Story Name > Test Case Name
     validations:
       required: True
