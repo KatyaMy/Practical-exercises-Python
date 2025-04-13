@@ -5,11 +5,10 @@ description: |
 labels: Test Case
 # assignees: me
 
-
 body:
-  - type: markdown
+  - type: input
     attributes:
-      value: '**ID**: TC_XX.YYY.ZZ | Epic Name > User Story Name > Test Case Name'
+      placeholder: '**ID**: TC_XX.YYY.ZZ | Epic Name > User Story Name > Test Case Name'
 
   - type: input
     id: id_test_case
